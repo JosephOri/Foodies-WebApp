@@ -1,10 +1,10 @@
 import mongoose, { connect } from 'mongoose';
-import { createUser, getUser } from '../../src/services/user.service';
-import UserModel, { IUser } from '../../src/models/User';
+import { createUser, getUser } from '../../services/user.service';
+import UserModel, { IUser } from '../../models/User';
 import User from '@interfaces/User';
 import bcrypt from 'bcrypt';
 import 'dotenv/config';
-import connectToDatabase from '../../src/utils/dbConfig';
+import connectToDatabase from '../../utils/dbConfig';
 
 const testUser = {
   userName: 'John Doe',
